@@ -1,10 +1,11 @@
 import streamlit as st
 import pyodbc
 import pandas as pd
-conn_str = (
-    r'DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};'
-    r'DBQ=.\mfa.accdb;'
-)
+conn_str = (    'DRIVER={Microsoft Access Driver (*.mdb, *.accdb)} ; DBQ=.\TESTDB\mfa.accdb;')
+
+#r'DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};'
+#    r'DBQ=.\TESTDB\mfa.accdb;'
+
 
 connm = pyodbc.connect(conn_str)
 cursorm = connm.cursor()
