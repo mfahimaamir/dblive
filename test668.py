@@ -5,11 +5,11 @@ import pandas as pd
 
 conn_str = (
     r'DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};'
-    r'DBQ=.\\mfa.accdb;'
+    r'DBQ=mfa.accdb;'
 )
 
 #conn_str = pyodbc.connect("DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};" + \
- #                     "DBQ=./mfa.accdb;")
+ #                     "DBQ=TESTDB/mfa.accdb;")
 st.header("Muhammad is the best in all over thuniverses")
 connm = pyodbc.connect(conn_str)
 cursorm = connm.cursor()
