@@ -5,7 +5,7 @@ import pandas as pd
 
 conn_str = (
     r'DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};'
-    r'DBQ=mfa.accdb;'
+    r'DBQ=TESTDB/mfa.accdb;'
 )
 
 #conn_str = pyodbc.connect("DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};" + \
